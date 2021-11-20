@@ -6,35 +6,35 @@ descriptorVersion: 2
 # Describe the plugin
 plugin:
   type: site
-  id: org.rd.plugin.awsmedialiveconsole
-  name: AWS MediaLive Console
+  id: org.rd.plugin.googlesitemap
+  name: Google XML Sitemap
   tags:
     - web
-    - video
-    - aws
-    - medialive
+    - google
+    - seo
+    - sitemap
   version:
     major: 1
     minor: 0
-    patch: 2
-  description: A plugin to provide a console to Studio users that supports starting, stoping and previewing AWS MediaLive channels
-  documentation: "https://raw.githubusercontent.com/russdanner/plugin-studio-medialive/master/README.md"
+    patch: 0
+  description: A plugin that adds a Google XML Sitemaps feed to your site for improved SEO 
+  documentation: "https://raw.githubusercontent.com/russdanner/plugin-engine-googlesitemap/master/README.md"
   website:
-    name: AWS MediaLive Console Plugin
-    url: https://github.com/russdanner/plugin-studio-medialive
+    name: Google Sitemap
+    url: https://github.com/russdannerplugin-engine-googlesitemap
   media:
     screenshots:
-      - title: Crafter CMS
-        description: Crafter CMS Plugin for AWS MediaLive Encoder Console
-        url: "https://raw.githubusercontent.com/russdanner/plugin-studio-medialive/master/.crafter/logo.png"
+      - title: Google XML Sitemap
+        description: Crafter CMS Plugin for Google Sitemap XML
+        url: "https://raw.githubusercontent.com/russdanner/plugin-engine-googlesitemap/master/.crafter/logo.png"
   developer:
     company:
       name: Russ Danner
       email: russdanner@craftersoftware.com
       url: https://github.com/russdanner
   build:
-    id: cafebabe4e6a24b5e0481d6ba87901d0b02716c9
-    date: 2021-11-18T00:00:00Z
+    id: cafebabe5e6a24b5e0481d6ba87901d0b02716c9
+    date: 2021-11-19T00:00:00Z
   license:
     name: MIT
     url: https://opensource.org/licenses/MIT
@@ -45,22 +45,3 @@ plugin:
   crafterCmsEditions:
     - community
     - enterprise
-  installation:
-    - type: form-control
-      element:
-        name: control
-        children:
-          - name: plugin
-            children:
-              - name: pluginId
-                value: org.rd.plugin.awsmedialiveconsole
-              - name: type
-                value: apps
-              - name: name
-                value: awsmedialiveconsole
-              - name: filename
-                value: index.modern.js
-          - name: icon
-            children:
-              - name: class
-                value: fa-video
