@@ -1,4 +1,4 @@
-# Google XML Sitemap Plugin for Crafter CMS
+# Google XML Sitemap Plugin for CrafterCMS
 
 Add Google XML Sitemap support to your site
 
