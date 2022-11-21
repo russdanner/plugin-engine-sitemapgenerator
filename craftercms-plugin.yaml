@@ -15,7 +15,7 @@ plugin:
   version:
     major: 1
     minor: 0
-    patch: 2
+    patch: 3
   description: A plugin that adds an XML Sitemap feed to your site for improved SEO 
   documentation: "https://raw.githubusercontent.com/russdanner/plugin-engine-sitemapgenerator/master/README.md"
   website:
@@ -24,7 +24,7 @@ plugin:
   media:
     screenshots:
       - title: Google XML Sitemap
-        description: Crafter CMS Plugin for Google Sitemap XML
+        description: CrafterCMS Plugin for Google Sitemap XML
         url: "https://raw.githubusercontent.com/russdanner/plugin-engine-sitemapgenerator/master/.crafter/logo.png"
   developer:
     company:
