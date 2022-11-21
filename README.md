@@ -1,4 +1,4 @@
-# Google XML Sitemap Plugin for CrafterCMS
+# XML Sitemap Generator Plugin for CrafterCMS
 
 Add an XML sitemap to your website for better SEO
 
