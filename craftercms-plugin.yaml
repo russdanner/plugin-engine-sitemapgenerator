@@ -1,4 +1,4 @@
-# This file describes a plugin for use in Crafter CMS
+# This file describes a plugin for use in CrafterCMS
 
 # The version of the format for this file
 descriptorVersion: 2
@@ -15,7 +15,7 @@ plugin:
   version:
     major: 1
     minor: 0
-    patch: 0
+    patch: 1
   description: A plugin that adds an XML Sitemap feed to your site for improved SEO 
   documentation: "https://raw.githubusercontent.com/russdanner/plugin-engine-sitemapgenerator/master/README.md"
   website:
