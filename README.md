@@ -15,7 +15,17 @@ Add the following config to your site's Engine's rewrite rules (`/config/engine/
         <from>^/sitemap.xml</from>
         <to type="forward">/plugins/org/rd/plugin/sitemapgenerator/sitemapgenerator/sitemap</to>
     </rule>
+```
 
+Note if your `urlrewrite.xml` file is empty then you will need to add the opening and closing tags for the configuration as follows:
+```
+<urlrewrite>
+    <!-- Send /sitemap.xml requests to the sitemap generator's controller -->
+    <rule>
+        <from>^/sitemap.xml</from>
+        <to type="forward">/plugins/org/rd/plugin/sitemapgenerator/sitemapgenerator/sitemap</to>
+    </rule>
+</urlrewrite>
 ```
 
 Best Practice: Make sure you are pointing to /sitemap in your `robots.txt`
