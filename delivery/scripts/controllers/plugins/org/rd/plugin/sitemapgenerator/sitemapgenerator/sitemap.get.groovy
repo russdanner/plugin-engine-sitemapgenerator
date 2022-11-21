@@ -2,7 +2,7 @@ import org.craftercms.search.elasticsearch.ElasticsearchWrapper
 import org.craftercms.engine.service.context.SiteContext
 import java.util.regex.Pattern
 
-def siteMapServer = (pluginConfig.getString("siteMapServer")) ? pluginConfig.getString("siteMapServer") : "ConfigureThisPlugin"
+def baseUrl = (pluginConfig.getString("baseUrl")) ? pluginConfig.getString("baseUrl") : "ConfigureThisPlugin"
 
 // Go to search and get all pages that are NOT disabled
 def pageItems = queryPages(params.route, elasticsearch)
@@ -37,7 +37,7 @@ xml.urlset(xmlns:"http://www.sitemaps.org/schemas/sitemap/0.9") {
             url {
                 SiteContext context = SiteContext.current 
                 url = urlTransformationService.transform("storeUrlToRenderUrl", v.localId)
-                fullyQualifiedUrl = siteMapServer+url
+                fullyQualifiedUrl = baseUrl+url
                 loc(fullyQualifiedUrl)
                 lastmod(v.lastModifiedDate_dt)  
                 changefreq("weekly")

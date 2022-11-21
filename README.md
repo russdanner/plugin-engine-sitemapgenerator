@@ -1,6 +1,6 @@
 # Google XML Sitemap Plugin for CrafterCMS
 
-Add Google XML Sitemap support to your site
+Add an XML sitemap to your website for better SEO
 
 # Installation
 
@@ -13,7 +13,7 @@ Add the following config to your site's Engine's rewrite rules (/config/engine/s
     <!-- sitemap is managed in static assets but is found on the site where search engines expect it -->
     <rule>
         <from>^/sitemap.xml</from>
-        <to type="forward">/plugins/org/rd/plugin/googlesitemap/googlesitemap/sitemap</to>
+        <to type="forward">/plugins/org/rd/plugin/sitemapgenerator/sitemapgenerator/sitemap</to>
     </rule>
 
 ```

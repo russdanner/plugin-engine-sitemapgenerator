@@ -6,34 +6,33 @@ descriptorVersion: 2
 # Describe the plugin
 plugin:
   type: site
-  id: org.rd.plugin.googlesitemap
-  name: Google XML Sitemap
+  id: org.rd.plugin.sitemapgenerator
+  name: XML Sitemap Generator
   tags:
     - web
-    - google
     - seo
     - sitemap
   version:
     major: 1
     minor: 0
-    patch: 1
-  description: A plugin that adds a Google XML Sitemaps feed to your site for improved SEO 
-  documentation: "https://raw.githubusercontent.com/russdanner/plugin-engine-googlesitemap/master/README.md"
+    patch: 0
+  description: A plugin that adds an XML Sitemap feed to your site for improved SEO 
+  documentation: "https://raw.githubusercontent.com/russdanner/plugin-engine-sitemapgenerator/master/README.md"
   website:
-    name: Google Sitemap
-    url: https://github.com/russdannerplugin-engine-googlesitemap
+    name: Sitemap Generator
+    url: https://github.com/russdanner/plugin-engine-sitemapgenerator
   media:
     screenshots:
       - title: Google XML Sitemap
         description: Crafter CMS Plugin for Google Sitemap XML
-        url: "https://raw.githubusercontent.com/russdanner/plugin-engine-googlesitemap/master/.crafter/logo.png"
+        url: "https://raw.githubusercontent.com/russdanner/plugin-engine-sitemapgenerator/master/.crafter/logo.png"
   developer:
     company:
       name: Russ Danner
-      email: russdanner@craftersoftware.com
+      email: russdanner@craftercms.com
       url: https://github.com/russdanner
   build:
-    id: cafebabe007794b5e0481d6ba87901d0b02716c9
+    id: cafebabe007794b5e0481d6ba88901d0b02716c9
     date: 2021-11-19T00:00:00Z
   license:
     name: MIT
@@ -55,6 +54,6 @@ plugin:
     - community
     - enterprise
   parameters:
-    - label: Site Map Server Protocol and Domain
-      name: siteMapServer
-      description: The server name to be appended to each page e.g. https://craftercms.com
+    - label: Site Base URL
+      name: baseUrl
+      description: The server URL to be appended to each page e.g. https://craftercms.com
