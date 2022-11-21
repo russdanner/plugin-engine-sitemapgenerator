@@ -22,7 +22,7 @@ Best Practice: Make sure you are pointing to /sitemap in your `robots.txt`
 ```
 User-agent: *
 Allow: /*
-Sitemap: https://YOURDOMAIN/sitemap
+Sitemap: https://YOURDOMAIN/sitemap.xml
 ```
 
 # Excludes
