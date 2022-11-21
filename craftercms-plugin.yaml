@@ -15,7 +15,7 @@ plugin:
   version:
     major: 1
     minor: 0
-    patch: 1
+    patch: 2
   description: A plugin that adds an XML Sitemap feed to your site for improved SEO 
   documentation: "https://raw.githubusercontent.com/russdanner/plugin-engine-sitemapgenerator/master/README.md"
   website:
