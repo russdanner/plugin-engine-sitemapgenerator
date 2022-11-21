@@ -8,9 +8,9 @@ Install the plugin via Studio's Plugin Management UI under Site Tools > Plugin M
 
 # Usage
 
-Add the following config to your site's Engine's rewrite rules (/config/engine/site-config.xml)
+Add the following config to your site's Engine's rewrite rules (`/config/engine/urlrewrite.xml`)
 ```
-    <!-- sitemap is managed in static assets but is found on the site where search engines expect it -->
+    <!-- Send /sitemap.xml requests to the sitemap generator's controller -->
     <rule>
         <from>^/sitemap.xml</from>
         <to type="forward">/plugins/org/rd/plugin/sitemapgenerator/sitemapgenerator/sitemap</to>
